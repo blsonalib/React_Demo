@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-
+// Render method wants only single element if want multiple element in render method the we can use div element
+// In render method we can use multiple element in the form of arrays
 ReactDOM.render(
-  <h1>Hello World</h1>,
+  <div>
+ <h1>Hello World</h1>
+  <p>This is paragraph </p>
+  </div>,
   document.getElementById('root')
 );
 
-ReactDOM.render( React.createElement("h1", null, "Hello World"), document.getElementById('root'));
-var h1 = document.createElement(h1);
-h1.innerHTML = "sonali bankar";
-document.getElementById('root').appendChild(h1);
