@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 let myElement = (
-  
-  <div>
-    <h2>This is heading</h2>
-    <p>This is paragraph</p>
-    <div>
-    <ul>
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Contact</li>
-  </ul>
-    </div>
-  </div>
+  <React.Fragment>
+ <label id="firstName">FirstName</label>
+  <input type="text" id="firstName" ></input>
+  </React.Fragment>
+ 
 );
 ReactDOM.render(
   myElement, document.getElementById('root')
