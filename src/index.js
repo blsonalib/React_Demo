@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-let myElement = (
-  <React.Fragment>
- <label id="firstName">FirstName</label>
-  <input type="text" id="firstName" ></input>
-  </React.Fragment>
- 
+const myElement = (
+  <>
+      <h1>This my Faviourite Social Media Application</h1>
+    <p>Some Websites are</p>
+    <ol>
+      <li>Facebook</li>
+      <li>Instagram</li>
+      <li>Whats app</li>
+      <li>Twitter</li>
+    </ol>
+  </> 
 );
 ReactDOM.render(
   myElement, document.getElementById('root')
