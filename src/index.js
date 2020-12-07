@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const fName = "sonali";
-const lName = "Bankar"
+var myName = "Sonali";
+var currentDate = new Date().toLocaleDateString();
+var currentTime = new Date().toLocaleTimeString();
 
 ReactDOM.render(
-  <> 
-    <p>{ `My First name is ${fName} and last name is ${lName} `}</p>
-  </>,
-
- 
+  <>
+    <h1>Hello, I am {myName}</h1>
+    <p>Taday's date is:  {currentDate} </p>
+    <p>Today's current Time is:  {currentTime}</p>
+ </>,
   document.getElementById('root')
 );
