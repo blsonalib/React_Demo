@@ -1,39 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
+let curTime = new Date( 2020,11,8,13);
+curTime = curTime.getHours();
+let greeting = "";
+const cssColor = {};
+if (curTime >= 12 && 11>= curTime) {
+  greeting = "Good Morning";
+  cssColor.color = "green";
+} else if (curTime >= 12 && 19 >= curTime) {
+  greeting = "Good Afternoon";
+  cssColor.color = "orange";
+} else {
+  greeting = "Good Night";
+  cssColor.color = "black";
+}
 
-const heading = {
-  color: "#f555fe",
-  marginTop: "20px",
-  textAlign: "center",
-  fontSize: "20px",
-  fontWeight: "500",
-  fontFamily: "'Poppins', sans-serif"
-};
 
-const imageBox = {
-  margin: "auto",
-  display: "flex",
-  justifyContent: "center"
-};
-
-var name = "Sonali";  
-var img1 = "https://picsum.photos/200/300";
-var img2 = "https://picsum.photos/200/270";
-var img3 = "https://picsum.photos/300/300";
-var links = "https://www.facebook.com/"
 ReactDOM.render(
   <>
-    <h1
-      style={heading}
-    >I am {name}</h1>
-    <div style={imageBox} >
-        <img src={img1} alt="This is image 1" />
-        <img src={img2} alt="This is image 2" />
-        <a href={ links} target="-blank">
-        <img src={img3} alt="This is image 3" />
-        </a>
+    <div className="box">
+      <h2>Hello Sir,  <span style={cssColor}>{ greeting }</span></h2>
     </div>
-    
-  </>,
-     document.getElementById("root")
+ </>,
+  document.getElementById("root")
 );
