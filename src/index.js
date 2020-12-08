@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import "./index.css"
+import { Javascript } from "./App";
+import myFav, { language, NewLanguage,bestLanguage } from "./App";
+
 ReactDOM.render(
- <App/>,
+  <ol>
+    <li>{ myFav }</li>
+    <li>{language}</li>
+    <li>{NewLanguage()}</li>
+    <li>{bestLanguage() }</li>
+</ol>,
  document.getElementById("root")
 );
