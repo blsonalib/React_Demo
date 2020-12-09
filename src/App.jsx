@@ -1,14 +1,19 @@
 import React from "react";
-import { Addition, Division, Multiplication, Substraction } from "./calc";
 
-function App(){
+function Cards(propes) {
     return (
-        <ul>
-            <li>Addition of two numbers:  {Addition(9, 5)}</li>
-            <li>Substtraction of two number: {Substraction(8, 4)}</li>
-            <li>Multiplication of two number: {Multiplication(10, 9)}</li>
-            <li>Division of two number: {Division(40, 3)}</li>
-        </ul>
+      <div className="Card-box">
+        <div className="card">
+          <img src={propes.imgsrc} alt="movie"></img>
+        </div>
+        <div className="card-content">
+          <p>{propes.title}</p>
+          <h1>{propes.sname}</h1>
+          <a href={propes.link} className="btn">
+            <button> Watch Now</button>
+          </a>
+        </div>
+      </div>
     );
 }
-export default App;
+export default Cards;
