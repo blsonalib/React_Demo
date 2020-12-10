@@ -8,18 +8,114 @@
  
 }
 body{
-  background : rgb(15, 148, 153);
   font-family: 'Rubik', sans-serif;
+  background: rgb(133, 123, 123);
 }
-.box{     
-  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.226);
-  background:#fff;
-  margin: 60px auto;
+.container{
+  max-width: 1200px;
+    width: 90%;
+    
+    margin: auto;
+    float: left;
+    width: 33.33%;
+}
+.container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card-container {
+  background-color: rgb(237, 237, 248);
+  margin: 50px;
+  width: 20%;
+ 
+}
+
+ .card img{
+  width: 100%;
+  display: block;
+  height: 200px;
+  margin: auto;
+   object-fit:fill; 
+  object-position: center;
+
+}
+.heading{
+  font-weight: 500;
+  font-size: 18px;
+  color: #353232cf;
+  padding: 0.5rem 0;
+}
+
+.card-container .card-content{
+  margin: 0.5rem;
+  padding: 1rem;
   text-align: center;
-  padding: 20px;
-  width: 50%;
-  border-radius: 25px; 
 }
-.box h2{
-  color: rgb(243, 83, 110);
+.card-content .btn{
+  display: inline-block;
+  color: #fff;
+  background: #747272;
+  padding: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-content .btn:hover{
+  background: #2e2d2d;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 4, 0.212);
+  cursor: pointer;
+}
+
+.main-heading{
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+  padding: 20px;
+  background: rgb(22, 20, 20);
+ 
+}
+
+/* Media Query */
+
+
+@media (max-width:500px){
+  .card-container {
+    background-color: rgb(237, 237, 248);
+    margin: 20px;
+    width: 100px;
+    
+  }
+  .heading{
+    font-weight:500;
+  font-size: 14px;
+  color: #353232cf;
+  padding: 0.5rem 0;
+  }
+  .para-title{
+    font-size: 10px;
+  }
+  .card-container .card-content{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    text-align: center;
+  }
+  .card-content .btn{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    background: #747272;
+    padding: 0.2rem;
+  }
+  .card img{
+    width: 100%;
+    display: block;
+    height: 200px;
+    margin: auto;
+     object-fit:fill; 
+    object-position: center;
+  
+  }
+ 
 }

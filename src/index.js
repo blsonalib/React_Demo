@@ -1,27 +1,43 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Cards from "./App"
+import Sdata from "./Sdata"
 
+console.log(Sdata[0].sname);
 ReactDOM.render(
 
   <>
+    <h1 className="main-heading">List of the best movies in Airtel Extreme</h1>
     <Cards
-      imgsrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFUtpeHBrk6X-afkMOLAF80E5gMh9Xs9NzA&usqp=CAU"
-      title="Airtel Extreme Series"
-      sname="Angel has fallen"
-      link="https://www.airtelxstream.in/movies/extraction/LIONSGATEPLAY_MOVIE_EXTRACTIONY2015M"
+      imgsrc={Sdata[0].imgsrc}
+      title={Sdata[0].title}
+      sname={Sdata[0].sname}
+      link={Sdata[0].link}
     />
      <Cards
-      imgsrc = "https://wallpapercave.com/wp/wp4969639.jpg"
-      title="Airtel Extreme Series"
-      sname="Knives Out"
-      link="https://www.airtelxstream.in/movies/knives-out/LIONSGATEPLAY_MOVIE_KNIVESOUTY2019M"
+      imgsrc={Sdata[1].imgsrc}
+      title={Sdata[1].title}
+      sname={Sdata[1].sname}
+      link={Sdata[1].link}
     />
      <Cards
-      imgsrc = "https://m.media-amazon.com/images/M/MV5BYmRmMWZhZGItYzA4MC00ZDYyLWE0OTMtYmM0MWRiN2Q4NGU2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_.jpg"
-      title="Airtel Extreme Series"
-      sname="Angel has fallen"
-      link="https://www.airtelxstream.in/movies/angel-has-fallen/LIONSGATEPLAY_MOVIE_ANGELHASFALLENY2019M"
+       imgsrc={Sdata[2].imgsrc}
+      title={Sdata[2].title}
+      sname={Sdata[2].sname}
+      link={Sdata[2].link}
+    />
+     <Cards
+       imgsrc={Sdata[3].imgsrc}
+      title={Sdata[3].title}
+      sname={Sdata[3].sname}
+      link={Sdata[3].link}
+
+    />
+     <Cards
+       imgsrc={Sdata[4].imgsrc}
+      title={Sdata[4].title}
+      sname={Sdata[4].sname}
+      link={Sdata[4].link}
 
       />
   </>,
