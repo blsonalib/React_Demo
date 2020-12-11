@@ -2,8 +2,8 @@ import React from "react";
 import "./index.css"
 function Cards(propes) {
   return (
- 
-       <div className="container card-container">
+    
+      <div className="container card-container">
       <div className="card">
           <img src={propes.imgsrc} alt="movie" ></img>
         </div>

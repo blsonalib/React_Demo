@@ -11,10 +11,13 @@ body{
   font-family: 'Rubik', sans-serif;
   background: rgb(133, 123, 123);
 }
+.card-box-containerr{
+  border: 2px solid black;
+  
+}
 .container{
-  max-width: 1200px;
+   max-width: 1200px;
     width: 90%;
-    
     margin: auto;
     float: left;
     width: 33.33%;
@@ -52,6 +55,7 @@ body{
   margin: 0.5rem;
   padding: 1rem;
   text-align: center;
+  
 }
 .card-content .btn{
   display: inline-block;
