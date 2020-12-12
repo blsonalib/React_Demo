@@ -1,21 +1,15 @@
 import React from "react";
-// import Favourite from "./Faviourite";
 import Airtel from "./Airtel";
-import Amazon from "./Amazon"
+import Amazon from "./Amazon";
+import Favourite from "./Faviourite";
 
-const favS = "amazon"
-const Favourite = () => {
-    if (favS === "airtel") {
-     return <Airtel/>
-    } else {
-        return <Amazon/>       
- } 
-}
+const favS = "Amazon";
 const App = () => {
   return (
     <>
       <h1 className="main-heading">List of the best movies in Airtel Extreme</h1>
-       <Favourite/> 
+      {/* <Favourite/>  */}
+      { favS === "Airtel" ? <Airtel /> : <Amazon />}
     </>
   );  
 }
