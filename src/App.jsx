@@ -1,23 +1,23 @@
-import React from "react";
-import "./index.css"
-function Cards(propes) {
-  return (
-    
-      <div className="container card-container">
-      <div className="card">
-          <img src={propes.imgsrc} alt="movie" ></img>
-        </div>
-        <div className="card-content">
-          <p className="para-title">{propes.title}</p>
-          <h1 className="heading">{propes.sname}</h1>
-          <a href={propes.link} target="_blank">
-            <button className="btn"> Watch Now</button>
-          </a>
-    </div>
-     
-      </div>
-   
+import React from "react"
+import Cards from "./Cards"
+import Sdata from "./Sdata"
 
-    );
+const App = () => {
+  return (
+    <>
+      <h1 className="main-heading">List of the best movies in Airtel Extreme</h1>
+      {Sdata.map((value) => {
+        return (
+          <Cards
+            key={value.id}
+            imgsrc={value.imgsrc}
+            title={value.title}
+            sname={value.sname}
+            link={value.link}
+          />
+        )
+      })}
+    </>
+  );  
 }
-export default Cards;
+export default App;
