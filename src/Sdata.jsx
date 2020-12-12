@@ -38,6 +38,13 @@ const Sdata = [
         title: "Airtel Extreme Series",
         sname: "Wonder",
         link: "https://www.airtelxstream.in/movies/wonder/LIONSGATEPLAY_MOVIE_WONDERY2017M",
+    },
+    {
+        id:6,
+        imgsrc: "https://image.airtel.tv/LIONSGATEPLAY/LIONSGATEPLAY_MOVIE_TWILIGHTY2008M/PORTRAIT/TWILIGHTY2008M_Idea_portrait_1000X1500.jpg",
+        title: "Amazon Prime",
+        sname: "Twilight",
+        link: "https://www.airtelxstream.in/movies/twilight/LIONSGATEPLAY_MOVIE_TWILIGHTY2008M",
     }
      
      

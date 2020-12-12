@@ -115,11 +115,13 @@ body{
   .card img{
     width: 100%;
     display: block;
-    height: 200px;
+    height: 300px;
     margin: auto;
      object-fit:fill; 
     object-position: center;
   
   }
- 
-}
+  p{
+    text-transform: uppercase;
+  }
+ }
